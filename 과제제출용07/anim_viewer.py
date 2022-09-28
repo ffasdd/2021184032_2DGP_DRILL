@@ -116,7 +116,7 @@ def animation4():
 
 while True:
     for x in range(1,3,1):
-        animation4()
+        animation1()
     for x in range(1, 3, 1):
         animation2()
     for x in range(1, 3, 1):
