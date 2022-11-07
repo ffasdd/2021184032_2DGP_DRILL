@@ -2,8 +2,7 @@ from pico2d import *
 import game_framework
 import game_world
 
-from grass import Grass_1
-from grass import Grass_2
+from grass import Grass
 from boy import Boy
 from ball_state import Ball
 
@@ -24,8 +23,10 @@ def enter():
     global boy, grass_1, grass_2, ball
     ball = Ball()
     boy = Boy()
-    grass_1 = Grass_1()
-    grass_2 = Grass_2()
+    grass_1 = Grass()
+    grass_2 = Grass()
+    grass_1.y = 40
+    grass_2.y = 10
 
     game_world.add_object(grass_1, 0)
     game_world.add_object(boy, 1)
